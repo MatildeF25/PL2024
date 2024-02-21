@@ -18,11 +18,7 @@
 - Second item
 - Third item
 
-
-```python
-    print("Hello World")
-```
-
+`code`
 --
 
 [title](https://www.example.com)
