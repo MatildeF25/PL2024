@@ -1,0 +1,7 @@
+Starting the process. On 23 cats 17 dogs Off 42 birds On 8 fish 12 sharks = Total should be now. 
+Off Nothing to add here. On 5 turtles 9 dolphins = Another total coming up. Off Done.
+On 3 whales 6 seals 4 penguins are added. Off 2 otters 7 sea lions = Total is now.
+On 1 walrus 5 polar bears 3 arctic foxes = Another total coming up. Off Done.
+On 4 reindeer 2 moose 8 wolves = Total is now. Off 10 bears 11 lynx = Final total is.
+Off 0
+
