@@ -3,29 +3,32 @@ import ply.lex as lex
 # Lista de nomes de tokens
 tokens = (
     'SELECT',
-    'ID',
-    'NOME',
-    'SALARIO',
+    'VARIABLE',
     'FROM',
-    'EMPREGADOS',
     'WHERE',
     'COMMA',
     'NUMBER',
-    'OPERATOR',
+    'EQUALS',
+    'GREATER_THAN',
+    'LESS_THAN',
+    'GREATER_THAN_EQUALS',
+    'LESS_THAN_EQUALS'
 )
 
 
 # Regular expression rules for simple tokens
 t_SELECT = r'SELECT'
-t_ID = r'id'
-t_NOME = r'nome'
-t_SALARIO = r'salario'
 t_FROM = r'FROM'
-t_EMPREGADOS = r'empregados'
 t_WHERE = r'WHERE'
+t_VARIABLE = r'id|nome|salario|empregados|salario'
 t_COMMA = r','
 t_NUMBER = r'\d+'
-t_OPERATOR = r'[><=]+'
+t_EQUALS = r'\='
+t_GREATER_THAN = r'\>'
+t_LESS_THAN = r'\<'
+t_GREATER_THAN_EQUALS = r'\>\='
+t_LESS_THAN_EQUALS = r'\<\='
+
 
 # ignorar caracteres em branco
 t_ignore = " \t"
@@ -45,7 +48,7 @@ lexer = lex.lex()
 
 # Testa o lexer
 data = '''
-SELECT id, nome, salario FROM empregados WHERE salario >= 1000
+SELECT id, nome, salario FROM empregados WHERE salario => 1000
 '''
 
 # Testa o lexer
